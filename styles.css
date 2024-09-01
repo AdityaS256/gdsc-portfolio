@@ -9,6 +9,100 @@ body {
   font-size: 16px;
 }
 
+.heroSection {
+  display: flex;
+  margin: 0;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profilePhoto {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%; /* Use percentage for a perfect circle */
+  object-fit: cover;
+}
+
+.text {
+  padding-right: 150px;
+}
+
+.designation {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 31px;
+  font-weight: 400;
+  margin: 10px 0; /* Add margin for spacing above and below */
+}
+
+.heading {
+  font-family: "Bad Script", cursive;
+  font-size: 50px;
+  display: inline; /* Keeps the text inline */
+}
+
+.headingColour {
+  color: #0077b6;
+  display: inline; /* Keeps the color styling within the heading */
+}
+
+.description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin: 20px 0; /* Add margin for spacing above and below */
+}
+
+.buttons {
+  height: 55px;
+  width: 200px;
+  border-radius: 1000px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+.buttonContainer {
+  padding-top: 20px; /* Space above the buttons */
+  display: flex; /* Use flexbox for alignment */
+  gap: 20px; /* Space between buttons */
+}
+
+
+.projectButton {
+  border: solid #0077b6;
+  color: #0077b6;
+}
+
+/* Media Query for Mobile Devices for hero section */
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column-reverse; /* Stack elements vertically */
+    height: auto; /* Remove fixed height */
+    text-align: center; /* Center text */
+  }
+
+  .text {
+    padding-right: 0; /* Remove right padding */
+  }
+
+  /* Ensure profile photo is a perfect circle */
+  .profilePhoto {
+    width: 200px; /* Set width */
+    height: 200px; /* Set height equal to width for a circle */
+    border-radius: 50%; /* Create a circle */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+    display: block; /* Remove extra spacing */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .buttonContainer {
+    padding-top: 20px; /* Space above buttons */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
 .bad-script-header {
   font-family: "Bad Script", cursive;
   font-weight: 400;
@@ -159,11 +253,12 @@ a:hover {
     background-color: #007acc;
     color: white;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 1000px;
     text-decoration: none;
     font-family: "Inter", sans-serif;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
     background: linear-gradient(180deg, #0077B6 0%, #01479F 100%);
+    border: none;
 
 }
 
