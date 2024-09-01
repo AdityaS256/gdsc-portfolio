@@ -119,3 +119,54 @@ a:hover {
     padding: 0;
   }
 }
+
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-list li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.contact-info {
+    flex-grow: 1;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #2a2a2a;
+}
+
+.contact-info span {
+    font-family: "IBM Plex Mono", monospace;
+    display: block;
+    color: #007acc;
+    margin-top: 5px;
+}
+
+.contact-button {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    transition: background-color 0.3s ease;
+    background: linear-gradient(180deg, #0077B6 0%, #01479F 100%);
+
+}
+
+.contact-button:hover {
+    background-color: #005f99;
+}
